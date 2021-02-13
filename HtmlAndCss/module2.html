@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML BASICS</title>
+    <meta charset="utf-8">
+    <link href="../main.css" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <h1>Full Stack Developer Theory</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../HtmlAndCss/htmlAndCss.html">HTML5 and CSS3 Fundamentals</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>HTML OVERVIEW</h2>
+        <ul>
+            <h4>Tags</h4>
+            <li>Tags or elements are the coding used to manipulate the content of the
+                webpage.</li>
+            <h4>Attributes</h4>
+            <li>Attributes give tags more details</li>
+            <li>A font tag &LT;font&GT;&LT;/font&GT; give the text a certain look, but an attribute provides
+                additional manipulation of the content. &LT;font color=”red”&GT;&LT;/font&GT;. The color
+                red is the attribute of the tag &LT;font&GT;.</li>
+        </ul>
+        <h2>DOCUMENT TYPE DEFINITION</h2>
+        <ul>
+            <li>This is the first line in the webpage document.</li>
+            <li>It defines the markup language used to properly render the webpage.</li>
+            <li>HTML5 uses a rather simple doctype of &LT;!DOCTYPE html&GT;.</li>
+        </ul>
+        <h2>WEB PAGE TEMPLATE</h2>
+        <ul>
+            <ul><h4>&LT;!DOCTYPE&GT;</h4></ul>
+                <li>As mentioned earlier this tells the browser what version of html is in
+                    use. It is a self-contained tag.</li>
+            <ul><h4>html &LT;html&GT;&LT;/html&GT;</h4></ul>
+                <li>This tells the browser this document is formatted for html</li>
+                <li>Additional attributes can be included within the html tag such as what
+                    language (lang) to display</li>
+                <li>It uses a closing tag at the end of the document.</li>
+            <ul><h4>Head &LT;head&GT;&LT;/head&GT;</h4></ul>
+                <li>The head element contains information about the webpage. It uses
+                    opening and closing tags</li>
+                <li>It also contains internal and external scripts, style sheets, character
+                    coding, etc.</li>
+                <li>It must have a closing tag before the body tag.</li>
+            <ul><h4>Title &LT;title&GT;&LT;/title&GT;</h4></ul>
+                <li>Coded within the head tag that displays the name of the webpage on
+                    the title bar of the browser.</li>
+                <li>It uses a closing tag.</li>
+            <ul><h4>Meta &LT;meta&GT;</h4></ul>
+                <li>Meta data describes characteristics of the page.</li>
+                <li>It is a self-contained tag meaning it doesn’t need a closing tag.</li>
+                <li>&LT;meta charset=”utf-8”&GT;</li>
+            <ul><h4>Link &LT;link&GT; - optional</h4></ul>
+                <li>Link is used to retrieve or access external documents.</li>
+                <li>These documents can be internal or external to the website.</li>
+                <li>Stylesheets, JavaScript, etc.</li>
+                <li>It is a self-contained tag.</li>
+            <ul><h4>Body &LT;body&GT;&LT;/body&GT;</h4></ul>
+                <li>The body tag contains the content of the webpage.</li>
+                <li>This includes all text, images, video, etc.</li>
+                <li>It has to have a closing tag before the footer &LT;footer&GT; (the footer
+                    tag(s) are optional) or before the closing html tag.</li>
+            <ul><h4>Footer &LT;footer&GT;&LT;/footer&GT; - This is optional</h4></ul>
+                <li>This contains copyright information, disclaimers, etc.</li>
+                <li>It also contains plain-text navigation links for Accessibility.</li>
+                <li>It has to have a closing tag.</li>
+            <ul><h4>Basic structure for standard HTML</h4></ul>
+            <ul>
+                &LT;!DOCTYPE html&GT;<br>
+                &LT;head&GT;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&LT;title&GT;Some Title&LT;/title&GT;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&LT;meta charset=&quot;utf-8&quot; &GT;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&LT;link **for external documents&GT;<br>
+                &LT;/head&GT;<br>
+                &LT;body&GT;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content, Content<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content, Content<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&LT;footer&GT;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;copyright<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text navigation links<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Additional information<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&LT;/footer&GT;<br>
+                &LT;/body&GT;<br>
+                &LT;/html&GT;<br>
+            </ul>
+        </ul>
+        <h2>HEADING ELEMENT</h2>
+        <ul><h4>Heading elements use six levels of default sizes.</h4>
+            <li>The largest is &LT;h1&GT; with &LT;h6&GT; being the smallest.</li>
+            <li>Don’t confuse heading elements with the head tag. The two are very much
+                different.</li>
+            <li>FYI, when using heading tags, there is a line-break automatically inserted
+                after each closing tag.</li>
+            <li>TIP – Use headings to make your pages more usable. Headings help to
+                maintain structure to the page and the content.</li>
+            <li>Headings create visual sections within the webpage and the height of the
+                header can signify its importance to the topic as a sub-topic.</li>
+        </ul>
+        <h2>PARAGRAPH ELEMENT</h2>
+        <ul>
+            <li>Paragraph elements help to keep sentences grouped together.</li>
+            <li>They are coded as &LT;p&GT; with a closing tag &LT;/p&GT;.</li>
+            <li>This leaves an empty space above and below the content within the tags.</li>
+        </ul>
+        <h2>LINE BREAK ELEMENT</h2>
+        <ul>
+            <li>The line-break element is used to separate sentences within a paragraph.</li>
+            <li>It is also used to add blank lines between elements of the document.</li>
+            <li>&LT;p&GT;This is a paragraph. &LT;br&GT; This is the next line using a line-break.&LT;/p&GT;</li>
+            <li>Line-breaks are a widely used element; probably the most used element.</li>
+            <li>However, be careful when using &LT;br&GT; elements because the layout can change with
+                unwanted results depending on the device, computer, tablet, Smartphone, etc. and
+                the browser</li>
+        </ul>
+        <h2>BLOCKQUOTE ELEMENT</h2>
+        <ul>
+            <li>The blockquote element is best used to display quoted text.</li>
+            <li>It indents the entire quote as to create a visual separation from other content in the
+                webpage.</li>
+            <li>It requires a closing tag, &LT;blockquote&GT;text&LT;/blockquote&GT;</li>
+            <li>Blockquotes can be use for other purposes to differentiate specific content from other
+                content.</li>
+        </ul>
+        <h2>PHRASE ELEMENTS</h2>
+        <ul>
+            <li>Phrase elements are used to manipulate text depending on how the text is used.</li>
+            <li>The resulting effect of the element is shown directly in the content of the webpage.</li>
+            <li>These tags require closing tags to include the text being manipulated.</li>
+            <li>There are numerous phrase elements that can be use, but the more popular elements are:</li><br>
+                <ul><li><b>&LT;b&GT;</b> or <b>&LT;strong&GT;</b> for <b>bold text.</b></li>
+                <li><b>&LT;cite&GT;</b> or <b>&LT;i&GT;</b> or <b>&LT;em&GT;</b> for <i>italicized text.</i></li>
+                <li><b>&LT;mark&GT;</b> for <mark>highlighting text.</mark></li>
+                <li><a href="https://www.w3.org/TR/html4/struct/text.html#h-9.2.1">&LT;Additional phrase elements can be found&GT;</a> </li></ul><br>
+            <li>This is relatively important when attempting to relay the importance of the
+                content.</li>
+        </ul>
+        <h2>ORDERED LIST AND UNORDERED LISTS</h2>
+        <ul>
+            <li>Ordered Lists are used to numerically list items in a specific order.</li>
+            <li>The list attributes can be:</li><br>
+                <ul><li>Numerals</li>
+                    <li>Uppercase</li>
+                    <li>Lowercase</li>
+                    <li>Roman Numerals</li>
+                    <li>Lowercase Roman Numerals</li>
+                    <li>The above can also be in descending order by using the reversed=”reversed”
+                        ordered list attribute.</li>
+                    <li>If necessary, the list can be started with a specific number by using the
+                        start=”10” ordered list attribute.</li></ul><br>
+            <li>the ordered list tag &LT;ol>&LT;/ol&GT; (this is the letter “o” and the letter “L” in
+                lowercase).</li>
+            <li>the unordered list tag &LT;ul&GT;&LT;/ul&GT; (this is the letter “u” and the letter “L” in
+                lowercase).</li>
+            <li>Unordered lists are nearly the same with the exception of numbering.</li>
+            <li>Unordered lists are there to list items without a hierarchy, so the visitor doesn’t place
+                any value of one item over another.</li>  
+        </ul>
+        <h2>DESCRIPTION LIST – HTML5</h2>
+        <ul><li>Description Lists are great for a description or definition of a word or phrase.</li>
+            <li>It’s similar to an ordered or unordered list with the exception there are no numerals or bullets.</li><br>
+                <ul><li>the &LT;dt>&LT;/dt&GT; tag. This is the word or phrase that is to be described. </li>
+                    <li>the &LT;dd>&LT;/dd&GT; tag. This is the definition.</li></ul><br>
+                <li>Description Lists are useful for FAQs, establishing a vocabulary for a specific
+                    topic, etc.</li>
+        </ul>
+        <h2>SPECIAL CHARACTERS</h2>
+        <ul><li>Description Lists are great for a description or definition of a word or phrase.</li>
+            <li></li>
+            <li></li>
+            <ul><li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li></ul>
+        </ul>
+
+    </main>
+    <footer>&copy; In Progress....</footer>
+</body>
+</html>
