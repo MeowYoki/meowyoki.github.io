@@ -1,9 +1,15 @@
-body { background-color: #000000;
-       color: #5085f8; 
+body { background-color: hsl(0, 0%, 0%);
+       color: hsl(221, 92%, 64%); 
 }
-h1,footer { background-color: #2b2c2e;
-            color: #e28111; 
+h1,footer { background-color: hsl(220, 3%, 17%);
+            color: hsl(32, 86%, 48%); 
 }
-h2 { background-color: #2b2c2e;
-     color: #5085f8; 
+h2 { background-color: hsl(220, 3%, 17%);
+     color: hsl(221, 92%, 64%); 
+}
+code { color: hsl(59, 93%, 48%);
+       padding-left: 5px ; padding-right: 5px;
+          
+}
+a { color: hsl(0, 93%, 48%);    
 }

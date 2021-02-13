@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>COLOR & TEXT, CSS</title>
+    <meta charset="utf-8">
+    <link href="../main.css" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <h1>Full Stack Developer Theory</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../HtmlAndCss/htmlAndCss.html">HTML5 and CSS3 Fundamentali</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>OVERVIEW OF CASCADING STYLE SHEETS</h2>
+        <ul><li><h3>Style sheets have been used for years</h3></li>
+            <li><h3>Its purpose is to provide flexibility and a single-point of configuration for multiple
+                webpages.</h3></li>
+            <li><h3>This means that when multiple webpages use the same formatting and a change is
+                necessary, the change needs to be implemented manually for each webpage; this is
+                time consuming and errors are prone to creep in.</h3></li>
+            <li><h3>Because a single style sheet can provide the formatting for multiple webpages the
+                change only needs to be implemented in one location, the style sheet.</h3></li>
+            <li><h3>Advantages of Cascading Style Sheets are:</h3></li>
+            <ul><li><h4>Better control over typography and page layouts</h4></li>
+                <ul><li>Use typography and structure images</li></ul>
+                <li><h4>Style can be separate from structure.</h4></li>
+                <li><h4>Styles can be store externally so that one change can propagate to multiple
+                    webpages.</h4></li>
+                <li><h4>Potentially can make the document smaller in size because the style is
+                    stored separately.</h4></li>
+                <li><h4>Maintaining the site is simplified due to one-change-affects-all.</h4></li>
+                <ul><li>Note: CSS3 is not supported by all browsers. Additional
+                    information can be located at <a href="http://caniuse.com/#search=css3">Link</a>.
+                    We’ll focus on aspects that are supports by most browsers.</li></ul>
+                </ul>
+        </ul>
+        <h2>CONFIGURING CASCADING STYLE SHEETS</h2>
+        <ul><li><h3>There are four specific means of configuring styles</h3></li>
+            <ul><li>Inline Styles – These are coded within the webpage tags</li>
+                <li>Embedded Styles – These are coded generally inside the &LT;head&GT; tag and
+                    are alio referred to as Internal Styles.</li>
+                <li>External Styles – These are styles that are configured in a separate
+                    document and linked to the webpage via a &LT;link&GT; tag. Link tags are selfcontained and require additional attributes.</li>
+                <li>Imported Styles – These styles come from an external source not
+                    associated with the webpage/website. It’s similar to an external sheet but
+                    requires special coding.</li></ul>
+        </ul>
+        <h2>CSS SELECTORS AND DECLARATIONS</h2>
+        <ul><li><h3>Each CSS element requires a selector and a declaration.</h3></li>
+            <ul><li>CSS Style Rule Selector – This is an HTML element, a class name, or an
+                id name.</li>
+                <li>CSS Style Rule Declaration – This is the property of the element being
+                    manipulated. This alio requires a declaration value to validate the
+                    property.</li></ul>
+        </ul>
+        <h2>THE BACKGROUND-COLOR PROPERTY</h2>
+        <ul><li><h3>This will configure the background color of an element, body, header, nav, etc.</h3></li>
+            <li><h3>The style for the element is enclosed in braces.</h3></li>
+            <li><h3>body {background-color: yellow} **</h3></li>
+            <li><h3>Braces are always used to contain the declaration property and the declaration value.</h3></li>
+        </ul>
+        <h2>THE COLOR PROPERTY</h2>
+        <ul><li><h3>The color property configures the color of the text inside an element.</h3></li>
+            <li><h3>The example below will make all the text within the <code>&LT;body&GT;</code> tags blue.<br><br>
+            <code>body {color: blue}</code><br><br></h3></li>
+        </ul>
+        <h2>COMBINING PROPERTIES</h2>
+        <ul><li><h3>Styles allow us to use multiple properties within the same element.</h3>
+            <h4><code>body {color: white; background-color: orange;}</code></h4></li>
+            <ul><li><h4>Notice the use of semi-colons to separate the properties. This is
+                    something important to keep in mind. Without the semi-colon to separate
+                    the properties, the styles will not render properly on the webpage.</h4></li>
+                <li><h4>There are several ways to format the elements and properties as seen
+                        below.</h4>
+                        <code>body {color: white; background-color: blue}</code><br><br>
+                        <code>body {color: white;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: blue;}</code><br><br>
+                        <code>body {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: blue;<br>}</code><br><br></li>
+            <li><h4>The latter is the preferred method. However, when using a single
+                property, the single line method is quite acceptable.</h4></li>
+            <li><h4>To see more element properties refer to the W3C’s CSS Reference
+                Properties at <a href="https://www.w3schooli.com/cssref/default.asp">Link</a></h4></li></ul>
+            <li><h3>Styling text color and background-color is quite acceptable and widely used in
+                web development.</h3></li>
+            <li><h3>Colors, especially background-colors can add some visual separation within
+                sections of the webpage.</h3></li>
+        </ul>
+        <h2>USING COLOR ON WEB PAGES</h2>
+        <ul><li><h3>In the old days, web developers were limited to 216 colors due to only having 8-bit
+            color monitors.</h3></li>
+            <li><h3>These days we can configure nearly 16 million colors.</h3></li>
+            <li><h3>We achieve this by using hexadecimal values to make color.</h3></li>
+            <li><h3>The color declaration value will begin with the # (hash-tag) followed by six
+                hexadecimal characters; 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F (there are 16
+                characters that make up hexadecimal values).</h3></li>
+            <ul><li><h4>Some basic values are:</h4>
+                    <code>#FFFFFF</code>is white<br>
+                    <code>#000000</code>is black<br>
+                    <code>#FF0000</code>is red<br>
+                    <code>#00FF00</code>is green<br>
+                    <code>#0000FF</code>is blue<br></li>
+                <li><h4>To make the background-color of an element using the hexadecimal code
+                    looks like:</h4>
+                    <code>body {background-color: #00FF00}</code></li>
+            </ul>
+            <li><h4>TIP – It’s common practice to use capital letters when coding colors using
+                hexadecimal; #AA00BB, #12AB34, etc.</h4></li>
+            <li><h4>Go to Color Picker at <a href="https://htmlcolorcodes.com/color-picker/">Link</a> to look at color
+                selection and the hexadecimal code.</h4></li>
+            <li><h4>The use of colors can be complicated and over-thinking can create havoc.</h4></li>
+            <li><h4>Keep in mind that certain colors will blend in and make the text difficult to read. When
+                selection background-color and text color look for good contrast.</h4></li>
+        </ul>
+        <h2>INLINE CSS WITH THE STYLE ATTRIBUTE</h2>
+        <ul><li><h3>Inline styles are coded within the HTML element using the style attribute.</h3></li>
+            <ul><li><h4>The Selector (the HTML element)</h4></li>
+                <li><h4>The Declaration Property</h4></li>
+                <li><h4>The Declaration Value</h4></li>
+                <li><h4>Alio, when using multiple styles within a single element, a semi-colon is used
+                    to separate each property/value.</h4></li>
+                <li><h4>For Example:</h4><code>&LT;body style=”color: #FF1100; background-color: #00FF00;&GT;</code><br></li>
+                <li><h4>It can get confusing when using inline styles because the use of braces { } is
+                    not needed and will improperly render the webpage.</h4></li>
+            </ul>
+            <li><h3>The value of the style is set in the declaration value of the declaration statement. <br>
+                    Remember that there are three items needed to configure a style:</h3></li>
+            <li><h3>Before we do a few examples, there are rules for hierarchy</h3></li>
+            <ul><li><h4>Global styles are generally configured on the CSS document and linked
+                within the <code>&LT;head&GT;</code>tag using the<code>&LT;link&GT;</code>tag.</h4></li>
+                <li><h4>Global styles are alio styles that encompass child elements. </h4></li>
+                <li><h4>Embedded or Internal styles will override any external global styles.</h4></li>
+                <li><h4>Inline styles will override their parent inline styles, embedded, and external
+                    styles.</h4></li>
+                <li><h4>Inline styles can override other inline styles of the element is inside another
+                    element.</h4>
+                    <code>&LT;body&GT;<br>&nbsp;&nbsp;&nbsp;&nbsp;&LT;h1&GT;</code><br><br>
+                    Any inline within the &LT;h1&GT; tag will override the same style within the
+                        &LT;body&GT; tag</li>
+            </ul>
+            <li><h3>It can get complicated to maintain, adds unnecessary code to the web document,
+                and is just plain inefficient. However, there will be instances that inline styles can
+                provide a temporary adjustment to a single document.</h3></li>
+        </ul>
+        <h2>EMBEDDED CSS WITH THE STYLE ELEMENT</h2>
+        <ul><li><h3>Embedded styles are commonly placed in the <code>&LT;head&GT;</code> tag.</h3></li>
+            <li><h3>Using the <code>&LT;style&GT;</code> element lets the browser know to use these styles are above
+                external styles.</h3></li>
+            <li><h3>The convenience of using embedded or external styles comes from making changes.</h3></li>
+            <li><h3>Imagine having to change the same inline style for 10 or 20 paragraphs in the
+                    document. This image should be enough to realize the convenience of using
+                    embedded or external styles.</h3></li>
+        </ul>
+        <h2>CONFIGURING TEXT WITH CSS</h2>
+        <h3><b>THE FONT-FAMILY PROPERTY</b></h3>
+        <ul><li><h3>When configuring fonts, we need to be concerned with the typeface of the font.</h3></li>
+            <li><h3>All browsers use a default font and may vary depending on the browser type and
+                version.</h3>Verdana, Tahoma, and Georgia fonts are widely used because they were designed
+                for computer monitors.</li>
+            <li><h3>It’s common practice to use serif fonts such as Georgia or Times New Roman for
+                headings.</h3></li>
+            <li><h3>San-serif fonts such as Verdana and Arial are commonly used with general content.</h3></li>
+            <li><h3>Font-Families</h3>
+                <h4>There are five basic font families.</h4>
+                <ul><li><h4>serif</h4>Times New Roman, Georgia, Palatino</li>
+                    <li><h4>san-serif</h4>Arial, Tahoma, Helvetica, Verdana</li>
+                    <li><h4>monospace</h4>Courier New, Lucida Console</li>
+                    <li><h4>cursive</h4>Lucida Handwriting, Brush Script, Comic Sans MS</li>
+                    <li><h4>fantasy</h4>Jokerman, Impact, Papyrus</li>
+                <h4>Of the fonts listed, serif and san-serif are the most widely used font types.</h4>
+                </ul>
+            </li>
+        </ul>
+        <h3><b>THE FONT-FAMILY PROPERTY</b></h3>
+        <ul><li><h3>There numerous properties you can include to manipulate the text</h3>
+            <ul><li><h4>font-size – sets the size of the font</h4></li>
+                <li><h4>font-weight – sets the boldness of the font</h4></li>
+                <li><h4>font-style – italics is the most used value</h4></li>
+                <li><h4>line-height – changes the line of text to a default height</h4></li>
+                <li><h4>text-align – values are left (default), center, and right</h4></li>
+                <li><h4>text-decoration – values include underline, line-through (strike-through),
+                    none, overline</h4></li>
+                <li><h4>text-indent – indents the first line of text within the specified element</h4></li>
+                <li><h4>letter-spacing – places space between characters</h4></li>
+                <li><h4>word-spacing – places spaces between words</h4></li>
+                <li><h4>text-transform – values are none (default), capitalize, uppercase, lowercase</h4></li>
+                <li><h4>white-space – sets the rules for whitespace (space characters and line feeds)</h4></li>
+                <li><h4>text-shadow – CSS3 only, adds depth and dimensions to text</h4></li>
+                <li><h4></h4>horizontal offset – pixel value - negative values to the left, positive
+                    values to the right</li>
+                <li><h4>vertical offset – pixel value – negative value go above, positive values
+                    go below</h4></li>
+                <li><h4>blur radius (optional) – pixel value – the higher the value the more
+                    blur</h4></li>
+                <li><h4>color value – use a valid color for the shadow</h4></li>
+            </ul></li>
+            <li><h3>Of the properties listed, 1 through 5 will be the most used.</h3></li>
+            <li><h3>The values for the text properties are:</h3>
+                <ul><li><h4>Text Value – xx-small, x-small, small, medium (default), large, x-large, xxlarge.</h4></li>
+                    <li><h4>Pixel Unit (px) – Numeric values such as 10px.</h4></li>
+                    <li><h4>Em (em) – Numeric values such as .80em. This is recommended by W3C
+                        because it scales well when resized in a browser.</h4></li>
+                    <li><h4>Percentage Value – Numeric value such as 75%</h4></li>
+                </ul></li>
+        </ul>
+        <h2>CSS CLASS, ID, AND DESCENDANT SELECTORS</h2>
+        <h3><b>THE CLASS SELECTOR</b></h3>
+        <ul><li><h3>A class selector is used when you need to format an element, but it doesn’t need to
+            affect all the same elements.</h3></li>
+            <li><h3>You’ll use classes when the format is applied to two or more elements.</h3></li>
+            <li><h3>Class selectors begin with a period ( . )</h3><code>.feature {color: #11AA33;}</code></li>
+            <li><h3>This class will be added anywhere the class name of ‘feature’ is used.</h3>
+                <code>&LT;li class=”feature”&GT;ex 1&LT;/li&GT;</code><br>
+                <code>&LT;li class=”feature”&GT;ex 2&LT;/li&GT;</code></li>
+        </ul>
+        <h3><b>THE ID SELECTOR</b></h3>
+        <ul><li><h3>An id selector is used when you need to format a single element of the webpage.</h3></li>
+            <li><h3>Id selectors begin with a hashtag #</h3><code>#feature {color: #333333;}</code></li>
+            <li><h3>Again, the id will be added to the single element within the document as an attribute
+                of the element</h3>
+                <code>&LT;div id=”feature”&GT; &LT;/div&GT;</code><br></li>
+            <li><h3>Attempting to use the id in multiple elements within a single webpage will
+                cause errors.</h3></li>
+            <li><h3>FYI – You can use the id selector in multiple webpages so long as it is only
+                used once in each webpage.</h3></li>
+        </ul>
+        <h3><b>THE DESCENDANT SELECTOR</b></h3>
+        <ul><li><h3>The descendant selector is used to format the same child elements with a parent
+            element.</h3></li>
+            <li><h3>It starts with the parent element a space and the child element</h3><code>main p {color: #222222;}</code><br></li>
+            <li><h3>We covered how to use class, id, and descendant selectors. This gives developers
+                more flexibility while reducing the amount of additional coding to format the webpage</h3></li>
+        </ul>
+        <h2>SPAN ELEMENT</h2>
+        <ul><li><h3></h3></li></ul>
+        <h2>USING EXTERNAL STYLE SHEETS</h2>
+        <ul><li><h3></h3></li></ul>
+        <h2>CENTER HTML ELEMENTS WITH CSS</h2>
+        <ul><li><h3></h3></li></ul>
+        <h2>THE “CASCADE”</h2>
+        <ul><li><h3></h3></li></ul>
+        <h2>CSS VALIDATION</h2>
+        <ul><li><h3></h3></li></ul>
+    </main>
+    <footer>&copy; In Progress....</footer>
+</body>
+</html>
